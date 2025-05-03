@@ -116,4 +116,35 @@
     padding: 20px;
     margin-top: 60px;
   }
-  
+  /* Make layout stack vertically on small screens */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .features-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-card {
+    margin: 1rem;
+  }
+}
+.hero, .features, .contact, .projects {
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
