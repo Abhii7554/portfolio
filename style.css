@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #f1c9d6);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #90caf9;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #fce4ec;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .section {
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .projects {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .project-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  
+  footer {
+    text-align: center;
+    background-color: #111;
+    color: #eee;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
