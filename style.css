@@ -9,9 +9,11 @@ body {
   background-color: #ffe6f0;
   color: #333;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
-.main-header {
+/* Header Styles */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,9 +45,10 @@ body {
   text-decoration: underline;
 }
 
+/* Hide hamburger on desktop */
 .hamburger {
   display: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   color: #fff;
 }
@@ -53,56 +56,88 @@ body {
 /* Mobile Nav */
 .mobile-nav {
   display: none;
+  flex-direction: column;
+  background-color: #111;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .mobile-nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
 }
 
 .mobile-nav.active {
   display: flex;
 }
 
+/* Hero Section */
 .hero {
   padding: 5rem 2rem;
   text-align: center;
+  background-color: #ffe6f0;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .typing {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #555;
 }
 
+/* Shared Section Styles */
 .section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Card */
 .project-card {
   background-color: #fff;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #111;
   color: white;
+  margin-top: 3rem;
 }
 
-/* Responsive Styles */
+/* Responsive Rules */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -112,26 +147,19 @@ footer {
     display: block;
   }
 
-  .mobile-nav {
-    display: none;
-    flex-direction: column;
-    background-color: #111;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    z-index: 999;
+  .hero h1 {
+    font-size: 2rem;
   }
 
-  .mobile-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #333;
+  .typing {
+    font-size: 1.2rem;
   }
 
-  .mobile-nav.active {
-    display: flex;
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
   }
 }
-
