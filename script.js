@@ -37,4 +37,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   document.addEventListener("DOMContentLoaded", () => {
     if (typingText.length) setTimeout(type, 1000);
   });
-  
+  const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
