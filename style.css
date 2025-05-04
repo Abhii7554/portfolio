@@ -53,9 +53,6 @@ body {
 /* Mobile Nav */
 .mobile-nav {
   display: none;
-  flex-direction: column;
-  background-color: #111;
-  padding: 1rem;
 }
 
 .mobile-nav a {
@@ -105,7 +102,7 @@ footer {
   color: white;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -115,11 +112,26 @@ footer {
     display: block;
   }
 
-  .mobile-nav.hidden {
+  .mobile-nav {
     display: none;
+    flex-direction: column;
+    background-color: #111;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #333;
   }
 
   .mobile-nav.active {
     display: flex;
   }
 }
+
