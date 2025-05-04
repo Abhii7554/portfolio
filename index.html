@@ -9,25 +9,23 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Abhishek</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="main-header">
+    <div class="logo">Abhishek</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="hamburger">&#9776;</div>
-<nav class="mobile-nav">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
   </header>
+
+  <div class="mobile-nav hidden">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 
   <section id="home" class="hero">
     <div class="hero-content" data-aos="fade-up">
@@ -41,19 +39,16 @@
     <p>I'm a student learning HTML, CSS, and JavaScript to build clean and functional websites. I’m passionate about web development and growing every day.</p>
   </section>
 
-  <!-- Projects Section -->
-<section class="projects" id="projects">
-  <h2>My Projects</h2>
-
-  <div class="project-card">
-    <h3>🚀 Startup Landing Page</h3>
-    <p>A modern, responsive landing page built from scratch using HTML, CSS, and JavaScript. Features animations, a mobile nav menu, and a clean, minimal UI.</p>
-    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-    <a href="https://abhii7554.github.io/startup-landing-page/" target="_blank">🔗 Live Demo</a> |
-    <a href="https://github.com/Abhii7554/startup-landing-page.git" target="_blank">📂 GitHub Repo</a>
-  </div>
-</section>
-
+  <section class="projects section" id="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>🚀 Startup Landing Page</h3>
+      <p>A modern, responsive landing page built from scratch using HTML, CSS, and JavaScript. Features animations, a mobile nav menu, and a clean, minimal UI.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <a href="https://abhii7554.github.io/startup-landing-page/" target="_blank">🔗 Live Demo</a> |
+      <a href="https://github.com/Abhii7554/startup-landing-page.git" target="_blank">📂 GitHub Repo</a>
+    </div>
+  </section>
 
   <section id="contact" class="section" data-aos="fade-up">
     <h2>Contact Me</h2>
