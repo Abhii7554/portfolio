@@ -58,6 +58,7 @@ body {
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
+  z-index: 999;
 }
 
 .mobile-nav.active {
