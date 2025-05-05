@@ -51,3 +51,20 @@ const mobileNav = document.getElementById("mobile-nav");
 menuToggle.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
 });
+
+
+// Pop animation trigger on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.tech-icon').forEach(icon => {
+        icon.style.animationPlayState = 'running';
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.tech-icon').forEach(icon => {
+  icon.style.animationPlayState = 'paused';
+  observer.observe(icon);
+});
