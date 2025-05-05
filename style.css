@@ -59,7 +59,19 @@ body {
   width: 100%;
   padding: 1rem 2rem;
   z-index: 999;
+  gap: 1rem;
 }
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+
 
 .mobile-nav.active {
   display: flex;
