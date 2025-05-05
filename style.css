@@ -78,10 +78,23 @@ body {
 }
 
 .hero {
-  padding: 6rem 2rem;
-  padding-top: 120;
-  text-align: center;
-  min-height: 60vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+}
+
+#about {
+  padding: 2rem 1rem;
+}
+.hero + #about {
+  margin-top: 0;
+}
+/* Reset section margins globally if needed */
+section {
+  margin: 0;
 }
 
 .hero h1 {
@@ -119,6 +132,9 @@ footer {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+  #about {
+    padding-top: 1rem;
   }
 
   .hamburger {
