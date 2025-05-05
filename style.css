@@ -90,7 +90,7 @@ body {
   padding: 2rem 1rem;
 }
 .hero + #about {
-  margin-top: 0;
+  margin-top: 2;
 }
 /* Reset section margins globally if needed */
 section {
