@@ -277,3 +277,10 @@ footer {
   width: 28px;
   height: 28px;
 }
+
+
+/* Apply this to animated elements */
+.your-element {
+  transform: translateZ(0);
+  will-change: transform;
+}

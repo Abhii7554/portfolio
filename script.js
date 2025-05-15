@@ -68,3 +68,5 @@ document.querySelectorAll('.tech-icon').forEach(icon => {
   icon.style.animationPlayState = 'paused';
   observer.observe(icon);
 });
+
+window.addEventListener('scroll', yourFunction, { passive: true });
